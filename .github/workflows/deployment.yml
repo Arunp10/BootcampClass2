@@ -31,7 +31,7 @@ jobs:
       - name: Build React App
         run: yarn run
       
-      - name: Install Surge
+      - name: Install Surg
         run: npm install -g surge
       - name: Deploy to Surge
         run: surge ./ tired-spade.surge.su --token ${{ secrets.SURGE_TOKEN }}
