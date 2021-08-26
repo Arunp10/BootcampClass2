@@ -34,4 +34,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Deploy to Surge
-        run: surge --domain auspicious-cord.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ auspicious-cord.surge.sh --token ${{ secrets.SURGE_TOKEN }}
