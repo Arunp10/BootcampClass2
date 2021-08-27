@@ -34,4 +34,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Deploy to Surge
-        run: surge ./build arun_react_first_app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge --domain arun_react_first_app.surge.sh --token ${{ secrets.SURGE_TOKEN }}
